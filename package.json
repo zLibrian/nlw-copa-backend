@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
-    "start": "npm run build && node dist/src/server.js"
+    "start": "npm run build && node dist/src/server.js",
+    "erd-generate": "npx prisma generate"
   },
   "keywords": [],
   "author": "",
