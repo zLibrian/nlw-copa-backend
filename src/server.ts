@@ -9,7 +9,7 @@ const prisma = new PrismaClient({
 const app = express();
 app.use(cors())
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3333;
 
 app.get('/pools/count', async (req, res) => {
   const count = await prisma.pool.count()
