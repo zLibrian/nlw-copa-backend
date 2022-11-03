@@ -12,8 +12,10 @@ const poolsController = {
       title: z.string()
     });
     const { title } = await createPoolBody.parseAsync(req.body);
-    return res.status(201).json({ title });
-  }
+
+    const code = await poolsService.create(title);
+    return res.status(201).json({ code });
+  },
 }
 
 export default poolsController;
