@@ -1,4 +1,4 @@
-import { ICount } from "../interfaces/indx";
+import { ICount } from "../interfaces";
 import guessesModel from "../models/guessesModel";
 
 const guessesService = {
